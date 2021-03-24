@@ -21,8 +21,6 @@ namespace Vsite.Oom.Polymorhism
             }
         }
 
-        
-
         public void AddParagraph(string text, bool isHtml = false)
         {
             if (isHtml)
@@ -35,6 +33,6 @@ namespace Vsite.Oom.Polymorhism
                 Console.WriteLine();
             }
         }
-        
+
     }
 }
