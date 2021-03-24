@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vsite.Oom.Polymorhism
 {
-    public class HtmlFormatter
+    public class HtmlFormatter : IFormatter
     {
         public void WriteHeading(string text, int level)
         {
