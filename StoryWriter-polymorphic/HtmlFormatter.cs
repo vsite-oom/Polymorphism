@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Vsite.Oom.Polymorhism
 {
@@ -10,17 +11,39 @@ namespace Vsite.Oom.Polymorhism
     {
         public void WriteHeading(string text, int level)
         {
-            throw new NotImplementedException();
+            if (level == 1)
+            {
+                writer.WriteLine($"<h1>{text}</h1>");
+            }
+            else if (level == 2)
+            {
+                writer.WriteLine($"<h2>{text}</h2>");
+            }
+            else if (level == 3)
+            {
+                Console.WriteLine($"<h3>{text}</h3>");
+            }
+            else if (level == 4)
+            {
+                Console.WriteLine($"<h4>{text}</h4>");
+            }
         }
 
         public void WriteParagraph(string text)
         {
-            throw new NotImplementedException();
+            writer.WriteLine($"<p>{text}</p>");
         }
 
         public void WriteHyperlink(string caption, string link)
         {
-            throw new NotImplementedException();
+            writer.WriteLine($"<a href=\"{link}\">{caption}</a>");
         }
+
+        public override string ToString()
+        {
+            return writer.ToString();
+        }
+
+        private TextWriter writer = new StringWriter();
     }
 }
