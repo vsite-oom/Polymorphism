@@ -2,7 +2,7 @@
 
 namespace Vsite.Oom.Polymorhism
 {
-    public class PlainTextFormatter
+    public class PlainTextFormatter : IFormatter
     {
         // Implementation of methods (code inside methods) MUST NOT be changed!
         private char GetHeadingUnderlineCharacter(int level)
