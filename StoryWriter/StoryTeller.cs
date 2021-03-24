@@ -15,6 +15,7 @@ namespace Vsite.Oom.Polymorhism
                 Console.WriteLine($"<h1>{title}</h1>");
                 return;
             }
+
             Console.WriteLine(title);
             Console.WriteLine(new string('=', title.Length));
         }
@@ -26,6 +27,7 @@ namespace Vsite.Oom.Polymorhism
                 Console.WriteLine($"<p>{text}</p>");
                 return;
             }
+
             Console.WriteLine(text);
             Console.WriteLine();
         }

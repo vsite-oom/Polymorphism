@@ -2,7 +2,7 @@
 {
     public class Story
     {
-        public Story(PlainTextFormatter formatter)
+        public Story(IFormatter formatter)
         {
             this.formatter = formatter;
         }
@@ -29,6 +29,6 @@
             return formatter.ToString();
         }
 
-        private readonly PlainTextFormatter formatter;
+        private readonly IFormatter formatter;
     }
 }
