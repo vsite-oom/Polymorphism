@@ -26,14 +26,14 @@ namespace Vsite.Oom.Polymorhism
             {
                 // TODO: When everything is done, following lines should be uncommented to generate a regular HTML page
 
-                //Story story = new Story(new HtmlFormatter());
-                //story.AddHeading("Story Title", 1);
-                //story.AddParagraphs(new string[] { "This is the first paragraph.", "This is the second paragraph." });
-                //story.AddHeading("Section Title", 2);
-                //story.Hyperlink("This is a link", "www.amazon.com");
-                //story.AddParagraphs(new string[] { "This is the third paragraph." });
+                Story story = new Story(new HtmlFormatter());
+                story.AddHeading("Story Title", 1);
+                story.AddParagraphs(new string[] { "This is the first paragraph.", "This is the second paragraph." });
+                story.AddHeading("Section Title", 2);
+                story.Hyperlink("This is a link", "www.amazon.com");
+                story.AddParagraphs(new string[] { "This is the third paragraph." });
 
-                //writer.Write(story.ToString());
+                writer.Write(story.ToString());
             }
         }
     }
