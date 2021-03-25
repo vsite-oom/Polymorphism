@@ -24,8 +24,7 @@ namespace Vsite.Oom.Polymorhism
 
             using (TextWriter writer = new StreamWriter("MyWebPage.html"))
             {
-                // TODO: When everything is done, following lines should be uncommented to generate a regular HTML page
-
+           
                 Story story = new Story(new HtmlFormatter());
                 story.AddHeading("Story Title", 1);
                 story.AddParagraphs(new string[] { "This is the first paragraph.", "This is the second paragraph." });
